@@ -7,8 +7,8 @@ root = Path(__file__).resolve().parents[1]
 output = root / 'dist'
 if output.exists():
     rmtree(output)
-for name in ('index.html', 'favicon.svg', 'robots.txt', 'sitemap.xml',
-             'assets/portal.css', 'assets/og-openbfme.png'):
+for name in ('index.html', '404.html', 'favicon.svg', 'robots.txt',
+             'sitemap.xml', 'llms.txt', 'assets/portal.css', 'assets/og-openbfme.png'):
     source = root / name
     destination = output / name
     destination.parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,13 @@
+# OpenBFME
+
+OpenBFME is an independent community project reconstructing Battle for Middle-earth I and II in C++ and recreating Rise of the Witch-king in Godot. This site explains the projects, current alpha access, community, and dated code-reconstruction progress. It does not offer finished BFME I or II games.
+
+## Official resources
+
+https://openbfme.org/
+https://github.com/Open-BFME/Open-BFME-1
+https://github.com/Open-BFME/Open-BFME-2
+https://github.com/Open-BFME/openbfme-godot
+https://github.com/Open-BFME/openbfme-godot/releases
+
+The percentages on the website are a 12 October 2026 snapshot of each game's code in C++, not overall game completion. Follow the source reports for current progress. The Godot alpha needs original game files.

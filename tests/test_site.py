@@ -68,14 +68,18 @@ class SiteTest(unittest.TestCase):
         sitemap = ElementTree.parse(ROOT / 'sitemap.xml')
         self.assertEqual(sitemap.findtext('{*}url/{*}loc'), 'https://openbfme.org/')
         self.assertIn('Sitemap: https://openbfme.org/sitemap.xml', (ROOT / 'robots.txt').read_text())
+        self.assertIn('# OpenBFME', (ROOT / 'llms.txt').read_text())
+        self.assertIn('https://github.com/Open-BFME/', (ROOT / 'llms.txt').read_text())
+        self.assertIn('<meta name="robots" content="noindex">', (ROOT / '404.html').read_text())
 
     def test_deployment_contains_only_public_files(self):
         subprocess.run([sys.executable, 'tools/build_site.py'], cwd=ROOT, check=True,
                        capture_output=True)
         files = {str(p.relative_to(ROOT / 'dist')) for p in (ROOT / 'dist').rglob('*') if p.is_file()}
         artwork = {str(p.relative_to(ROOT)) for p in (ROOT / 'assets/art').glob('*.png')}
-        self.assertEqual(files, {'index.html', 'favicon.svg', 'robots.txt', 'sitemap.xml',
-                                 'assets/portal.css', 'assets/og-openbfme.png'} | artwork)
+        self.assertEqual(files, {'index.html', '404.html', 'favicon.svg', 'robots.txt',
+                                 'sitemap.xml', 'llms.txt', 'assets/portal.css',
+                                 'assets/og-openbfme.png'} | artwork)
         self.assertEqual(len(artwork), 17)
         self.assertNotIn('local-reference', ' '.join(files))
 
