@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+
+# Local design studies and generated deployment output are not part of the release.
+/assets/local-bfme/
+/assets/local-reference/
+/dist/

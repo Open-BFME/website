@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#170c0c">
+  <meta name="description" content="Explore OpenBFME's open-source Battle for Middle-earth I and II reconstructions, the Rise of the Witch-king Godot alpha, code progress, and community.">
+  <title>OpenBFME | Open-source Battle for Middle-earth projects</title>
+  <link rel="canonical" href="https://openbfme.org/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OpenBFME">
+  <meta property="og:title" content="OpenBFME | Open-source Battle for Middle-earth projects">
+  <meta property="og:description" content="Follow the BFME I and II C++ reconstructions, explore the Rise of the Witch-king Godot alpha, and join the community.">
+  <meta property="og:url" content="https://openbfme.org/">
+  <meta property="og:image" content="https://openbfme.org/assets/og-openbfme.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="OpenBFME over a painted Middle-earth landscape">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" as="image" href="assets/art/t3a-head_bg.png">
+  <link rel="stylesheet" href="assets/portal.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://openbfme.org/#organization","name":"OpenBFME","url":"https://openbfme.org/","sameAs":["https://github.com/Open-BFME","https://discord.gg/wCvA2XqPUT"]},{"@type":"WebSite","@id":"https://openbfme.org/#website","url":"https://openbfme.org/","name":"OpenBFME","publisher":{"@id":"https://openbfme.org/#organization"}}]}</script>
+</head>
+<body>
+  <div class="site" id="top">
+    <div class="utility"><span>OPEN SOURCE · COMMUNITY DRIVEN</span><span><a href="https://github.com/Open-BFME">GitHub</a><span class="separator">·</span><a href="https://discord.gg/wCvA2XqPUT">Discord</a></span></div>
+    <header class="masthead">
+      <div class="masthead-inner"><p>THE BATTLE FOR MIDDLE-EARTH LIVES ON</p><div class="wordmark">OPEN<span>BFME</span></div><p class="subtitle">Rebuilding the games, together.</p></div>
+    </header>
+    <div class="infobar"><span>Three games, one community</span><span class="mark" aria-hidden="true">·</span><a href="#progress">Follow the code reconstruction</a></div>
+    <div class="ornament" aria-hidden="true"></div>
+    <div class="site-body">
+      <aside class="sidebar" aria-label="Site navigation">
+        <nav>
+          <p class="nav-heading">EXPLORE</p>
+          <a href="#home">Home</a>
+          <a href="#projects">The projects</a>
+          <a href="#progress">Progress</a>
+          <a href="#alpha">Play the alpha</a>
+          <a href="#community">Community</a>
+          <a href="#faq">FAQ</a>
+          <p class="nav-heading secondary">ELSEWHERE</p>
+          <a href="https://github.com/Open-BFME">Source code ↗</a>
+          <a href="https://discord.gg/wCvA2XqPUT">Discord ↗</a>
+        </nav>
+      </aside>
+      <main class="content" id="home">
+        <section class="intro" aria-labelledby="welcome-title">
+          <h1 id="welcome-title">OpenBFME: Rebuilding The Battle for Middle-earth</h1>
+          <div class="intro-layout">
+            <div>
+              <p>OpenBFME is a community effort to reconstruct the original Battle for Middle-earth games from source and recreate The Rise of the Witch-king in Godot. The work is public, ongoing, and unfinished.</p>
+              <p><strong>BFME I and BFME II are C++ reconstruction projects. The Godot recreation of Rise of the Witch-king has early alpha builds for testers with the original game files.</strong></p>
+              <p>Start with <a href="#projects">the projects</a>, read the <a href="#progress">code progress reports</a>, or join the <a href="https://discord.gg/wCvA2XqPUT">OpenBFME Discord</a> to meet the community.</p>
+            </div>
+            <aside class="intro-links" aria-label="Project source links"><h2>Follow the work</h2><a href="https://github.com/Open-BFME/Open-BFME-1">BFME I source ↗</a><a href="https://github.com/Open-BFME/Open-BFME-2">BFME II source ↗</a><a href="https://github.com/Open-BFME/openbfme-godot">Godot project ↗</a></aside>
+          </div>
+        </section>
+        <section id="projects" aria-labelledby="projects-title">
+          <h2 id="projects-title">The projects</h2>
+          <div class="feature"><img src="assets/art/t3a-rotwk.png" alt="The Rise of the Witch-king expansion artwork" width="333" height="250" loading="lazy"><div><h3>Rise of the Witch-king in Godot</h3><p>An early recreation of the expansion. Alpha builds are available for testers who have compatible original game files.</p><p><a href="https://github.com/Open-BFME/openbfme-godot/releases">View the alpha releases ↗</a></p></div></div>
+          <div class="project-list"><article><h3>Battle for Middle-earth I</h3><p>Rebuilding the first game's C++ source, function by function, against the retail executable.</p><a href="https://github.com/Open-BFME/Open-BFME-1">BFME I repository ↗</a></article><article><h3>Battle for Middle-earth II</h3><p>Reconstructing the sequel's code and tracking what has been recovered.</p><a href="https://github.com/Open-BFME/Open-BFME-2">BFME II repository ↗</a></article></div>
+        </section>
+        <section class="progress-section" id="progress" aria-labelledby="progress-title">
+          <h2 id="progress-title">Reconstruction progress</h2>
+          <p>Share of each game's <strong>code in C++</strong>, not an estimate of overall game completion. Snapshot: <time datetime="2026-10-12">12 October 2026</time>.</p>
+          <table class="progress-table"><thead><tr><th scope="col">Game</th><th scope="col">C++ code</th><th scope="col">Source report</th></tr></thead><tbody><tr><th scope="row">BFME I</th><td>69.85%</td><td><a href="https://github.com/Open-BFME/Open-BFME-1/blob/master/docs/progress.svg">View report ↗</a></td></tr><tr><th scope="row">BFME II</th><td>79.21%</td><td><a href="https://github.com/Open-BFME/Open-BFME-2/blob/master/docs/progress.svg">View report ↗</a></td></tr></tbody></table>
+        </section>
+        <section class="lower-grid">
+          <div id="alpha"><div class="section-heading"><p class="eyebrow">TRY WHAT EXISTS TODAY</p><h2>Play the alpha</h2></div><p>Test the early Godot recreation of Rise of the Witch-king. It needs your own compatible original game files and is not a finished replacement.</p><a href="https://github.com/Open-BFME/openbfme-godot/releases">See available releases ↗</a></div>
+          <div id="community"><div class="section-heading"><p class="eyebrow">BUILD IT WITH US</p><h2>Community</h2></div><p>Discuss the work, test builds, or help reconstruct the code. Start with the project repositories or meet the community on Discord.</p><a href="https://discord.gg/wCvA2XqPUT">Join the OpenBFME Discord ↗</a></div>
+        </section>
+        <section class="faq" id="faq"><div class="section-heading"><p class="eyebrow">GOOD TO KNOW</p><h2>Frequently asked questions</h2></div><details><summary>Can I play BFME I or II from these source projects?</summary><p>They are ongoing reconstruction projects, not finished game downloads. Follow their repositories for the current state of the code.</p></details><details><summary>Do I need the original game files for the Godot alpha?</summary><p>Yes. The alpha is for testers who have the required original BFME II and Rise of the Witch-king files. See the release instructions before downloading.</p></details><details><summary>Where can I help?</summary><p>Choose a project repository above or join the OpenBFME Discord to find a place to contribute.</p></details></section>
+      </main>
+
+    </div>
+    <footer class="footer"><a class="ring-back" href="#top" aria-label="Back to top">TOP</a><p>OpenBFME is an independent community project. T3A:Online archival artwork and Rise of the Witch-king artwork are used with permission.</p></footer>
+  </div>
+</body>
+</html>

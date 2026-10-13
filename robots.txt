@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://openbfme.org/sitemap.xml
